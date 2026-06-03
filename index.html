@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Min Streamlit App</title>
+    <title>Streamlit i Webbläsaren</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.71.0/build/stlite.css" />
   </head>
   <body>
@@ -12,20 +12,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.71.0/build/stlite.js"></script>
     <script>
       stlite.mount({
-        requirements: [], // Lägg till extra paket här om du använder t.ex. pandas eller plotly, t.ex. ["pandas"]
+        requirements: [],
         entrypoint: "app.py",
         files: {
-          "app.py": `
-              import streamlit as st
+          "app.py": `import streamlit as st
 
-              st.title("Hej Grundskoleförvaltningen!")
-              st.write("Det här är en test-app som körs säkert via GitHub Pages.")
+st.title("Streamlit är igång! 🚀")
+st.write("Om du ser detta så fungerar din HTML-lösning perfekt.")
 
-              # Lägg till din egen Streamlit-kod här under:
-              namn = st.text_input("Vad heter du?")
-              if namn:
-                  st.write(f"Välkommen att testa appen, {namn}!")`,
-        },
+# Enkel test-funktion
+namn = st.text_input("Skriv ditt namn här för att testa:")
+if namn:
+    st.success(f"Snyggt jobbat {namn}! Appen fungerar.")
+`
+        }
       }, document.getElementById("root"));
     </script>
   </body>
