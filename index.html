@@ -16,16 +16,15 @@
         entrypoint: "app.py",
         files: {
           "app.py": `
-import streamlit as st
+              import streamlit as st
 
-st.title("Hej Grundskoleförvaltningen!")
-st.write("Det här är en test-app som körs säkert via GitHub Pages.")
+              st.title("Hej Grundskoleförvaltningen!")
+              st.write("Det här är en test-app som körs säkert via GitHub Pages.")
 
-# Lägg till din egen Streamlit-kod här under:
-namn = st.text_input("Vad heter du?")
-if namn:
-    st.write(f"Välkommen att testa appen, {namn}!")
-`,
+              # Lägg till din egen Streamlit-kod här under:
+              namn = st.text_input("Vad heter du?")
+              if namn:
+                  st.write(f"Välkommen att testa appen, {namn}!")`,
         },
       }, document.getElementById("root"));
     </script>
