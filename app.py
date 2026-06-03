@@ -891,21 +891,13 @@ if tab_map:
                 # ==================================================
                 # METABASE DASHBOARD
                 # ==================================================
-                metabase_html_code = """
-                <script defer src="https://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/app/embed.js"></script>
-                <script>
-                window.metabaseConfig = {
-                    isGuest: true,
-                    instanceUrl: "https://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se"
-                };
-                </script>
+                st.subheader("Närvarostatistik från Metabase")
 
-                <metabase-dashboard 
-                dashboard-id="c53a6382-2d8d-43cd-9984-7ee349614f56" 
-                style="width: 100%; height: 800px; display: block;">
-                </metabase-dashboard>
-                """
-                st.components.v1.html(metabase_html_code, height=800, scrolling=True)
+                # Vi använder den offentliga embed-länken med HTTPS
+                metabase_url = "https://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/embed/dashboard/c53a6382-2d8d-43cd-9984-7ee349614f56"
+
+                # Skapa en standard iFrame-ruta i appen
+                st.components.v1.iframe(metabase_url, height=800, scrolling=True)
                 st.divider()
 
                 # ==================================================
