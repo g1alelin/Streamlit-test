@@ -16,15 +16,8 @@
         entrypoint: "app.py",
         files: {
           "app.py": `import streamlit as st
-
-st.title("Streamlit är igång! 🚀")
-st.write("Om du ser detta så fungerar din HTML-lösning perfekt.")
-
-# Enkel test-funktion
-namn = st.text_input("Skriv ditt namn här för att testa:")
-if namn:
-    st.success(f"Snyggt jobbat {namn}! Appen fungerar.")
-`
+          st.title("Streamlit är igång! 🚀")
+          st.write("Om du ser detta så fungerar din HTML-lösning perfekt.")`
         }
       }, document.getElementById("root"));
     </script>
