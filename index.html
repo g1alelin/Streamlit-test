@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.71.0/build/stlite.js"></script>
     <script>
           stlite.mount({
-            requirements: ["plotly"], // 👈 HÄR lägger du till plotly!
+            requirements: ["plotly", "geopandas", "folium", "streamlit-folium"], // 👈 HÄR lägger du till plotly!
             entrypoint: "app.py",
             files: {
               "app.py": {
