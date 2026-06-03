@@ -1,0 +1,23 @@
+{
+  "alexander.lindahl@grundskola.goteborg.se": {
+    "name": "Alexander Lindahl",
+    "password_hash": "b6aa5837b35780be530727507b952d4206b10251e6dffb680675d1e7530066b9",
+    "role": "Analytiker (Full behörighet)",
+    "registered_at": "2026-05-28T08:50:05.752475",
+    "registration_order": 1
+  },
+  "g1alelin@skola.goteborg.se": {
+    "name": "Ale lin",
+    "password_hash": "aac06207cb3796a3129cf81696a7c85e9298df25d0779d0e9af28d4b7be6b64b",
+    "role": "Rektor (Annedalsskolan)",
+    "registered_at": "2026-05-28T08:51:39.170586",
+    "registration_order": 2
+  },
+  "rivercoffa@gmail.com": {
+    "name": "Coffa River",
+    "password_hash": "54813a693ca61a808b81bdf5782265ada6af6058044213def5ce63c9369cdcbb",
+    "role": "Samordnare (Centrum)",
+    "registered_at": "2026-05-28T08:53:25.680478",
+    "registration_order": 3
+  }
+}
