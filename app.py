@@ -892,17 +892,11 @@ if tab_map:
                 # METABASE DASHBOARD
                 # ==================================================
 
-                metabase_url = (
-                    "http://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/"
-                    "public/dashboard/c53a6382-2d8d-43cd-9984-7ee349614f56"
-                )
+                # Hela din korrekta URL ihopsatt på en rad
+                metabase_link = "http://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/public/dashboard/c53a6382-2d8d-43cd-9984-7ee349614f56"
 
-                st.components.v1.iframe(
-                    metabase_url,
-                    height=700,
-                    scrolling=True
-                )
-
+                # Skapar knappen
+                st.link_button("Öppna Metabase Dashboard 📊", metabase_link)
                 st.divider()
 
                 # ==================================================
