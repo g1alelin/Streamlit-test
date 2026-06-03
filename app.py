@@ -474,8 +474,8 @@ if 'clicked_arvskurs' not in st.session_state: st.session_state.clicked_arvskurs
 # ─────────────────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_real_bi_data():
-    csv_path = r"C:\Users\ad08013\Downloads\df_närvaro(Sheet 1).csv"
-    shp_path = r"C:\Users\ad08013\Downloads\Stadsområde_shp"
+    csv_path = r"df_närvaro(Sheet 1).csv"
+    shp_path = r"zip://Stadsområde_shp.zip"
 
     df = pd.read_csv(csv_path, sep=';', on_bad_lines='skip')
     df.columns = df.columns.str.strip()
