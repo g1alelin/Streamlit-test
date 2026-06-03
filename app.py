@@ -906,13 +906,7 @@ if tab_map:
                 });
                 </script>
 
-                <!--
-                THIS IS THE EXAMPLE!
-                NEVER HARDCODE THIS JWT TOKEN DIRECTLY IN YOUR HTML!
-
-                Fetch the JWT token from your backend and programmatically pass it to the 'metabase-dashboard'.
-                -->
-                <metabase-dashboard token="eyJhbGciOiJIUzI1NiJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjExfSwicGFyYW1zIjp7fSwiaWF0IjoxNzgwNDc4Nzc4LCJleHAiOjE3ODA0NzkzNzgsIl9lbWJlZGRpbmdfcGFyYW1zIjp7ImVuaGV0c25hbW4iOiJlbmFibGVkIiwibSVDMyVBNW5hZCI6ImVuYWJsZWQiLCIlQzMlQTVyc2t1cnMiOiJlbmFibGVkIn19.OuVbr4ETa9BWvnnf0nfBuHUqAq7X4WvKdL3lzeOG4fc" with-title="true" with-downloads="false"></metabase-dashboard>
+                <metabase-dashboard with-title="true" with-downloads="false"></metabase-dashboard>
                 """
                 st.components.v1.html(metabase_html_code, height=800, scrolling=True)
                 st.divider()
