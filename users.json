@@ -1,1 +1,9 @@
-{}
+{
+  "alexander.lindahl@grundskola.goteborg.se": {
+    "name": "Alexander Lindahl",
+    "password_hash": "b6aa5837b35780be530727507b952d4206b10251e6dffb680675d1e7530066b9",
+    "role": "Analytiker (Full behörighet)",
+    "registered_at": "2026-06-03T10:59:06.104280",
+    "registration_order": 1
+  }
+}
