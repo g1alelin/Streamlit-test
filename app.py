@@ -891,13 +891,23 @@ if tab_map:
                 # ==================================================
                 # METABASE DASHBOARD
                 # ==================================================
-                st.subheader("Närvarostatistik från Metabase")
+                metabase_html_code = """
+                <script defer src="http://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/app/embed.js"></script>
+                <script>
+                function defineMetabaseConfig(config) {
+                  window.metabaseConfig = config;
+                }
+                </script>
 
-                # Vi använder den offentliga embed-länken med HTTPS
-                metabase_url = "https://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/public/dashboard/c53a6382-2d8d-43cd-9984-7ee349614f56"
-
-                # Skapa en standard iFrame-ruta i appen
-                st.components.v1.iframe(metabase_url, height=800, scrolling=True)
+                <script>
+                  defineMetabaseConfig({
+                    "isGuest": true,
+                    "instanceUrl": "http://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se"
+                  });
+                </script>
+                <metabase-dashboard token="eyJhbGciOiJIUzI1NiJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjExfSwicGFyYW1zIjp7fSwiaWF0IjoxNzgwNDgwNzg3LCJleHAiOjE3ODA0ODEzODcsIl9lbWJlZGRpbmdfcGFyYW1zIjp7ImVuaGV0c25hbW4iOiJlbmFibGVkIiwibSVDMyVBNW5hZCI6ImVuYWJsZWQiLCIlQzMlQTVyc2t1cnMiOiJlbmFibGVkIn19.WgijQtjFVvZjlj4T9PWWeS_JyRPNBAwyo_7dcsU65hk" with-title="true" with-downloads="false"></metabase-dashboard>
+                """
+                st.components.v1.html(metabase_html_code, height=800, scrolling=True)
                 st.divider()
 
                 # ==================================================
