@@ -894,7 +894,7 @@ if tab_map:
                 st.subheader("Närvarostatistik från Metabase")
 
                 # Vi använder den offentliga embed-länken med HTTPS
-                metabase_url = "http://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/public/dashboard/c53a6382-2d8d-43cd-9984-7ee349614f56"
+                metabase_url = "https://metabase-609ip-gsf-analyslager.apps.k8sp.gbgpaas.se/public/dashboard/c53a6382-2d8d-43cd-9984-7ee349614f56"
                 # Skapar en snygg och tydlig knapp
                 st.link_button("Öppna Metabase Dashboard 📊", metabase_url, use_container_width=True)
                 # Skapa en standard iFrame-ruta i appen
